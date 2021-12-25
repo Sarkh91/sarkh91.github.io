@@ -1,0 +1,10 @@
+nav {
+  li {
+    display: inline-block;
+
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
