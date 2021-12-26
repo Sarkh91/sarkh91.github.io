@@ -1,6 +1,6 @@
-import React, {Fragment} from "react";
+import React, {Fragment, MouseEventHandler} from "react";
 
-const CounterButtons = ({increaseFn, decreaseFn}:{increaseFn:any, decreaseFn:any}) => {
+const CounterButtons = ({increaseFn, decreaseFn}:{increaseFn:MouseEventHandler<HTMLButtonElement>, decreaseFn:MouseEventHandler<HTMLButtonElement>}) => {
 
     return (
             <Fragment>
