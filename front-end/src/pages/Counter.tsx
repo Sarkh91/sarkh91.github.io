@@ -1,5 +1,5 @@
 import React from "react";
-import {CounterNumber} from "@/components";
+import {CounterNumber, CounterButtons, CounterList} from "@/components";
 import {Fragment, useState} from "react";
 
 const Counter:React.FC = () => {
@@ -10,15 +10,16 @@ const Counter:React.FC = () => {
     }
 
     const decrease = () => {
-        setNumber(number - 1)
+        setNumber(number - 1 )
     }
+
 
    return (
         <Fragment>
             <h1>Counter</h1>
             <CounterNumber number={number}/>
-            <button onClick={increase}>+</button>
-            <button onClick={decrease}>-</button>
+            <CounterButtons increaseFn={increase} decreaseFn={decrease} />
+            <CounterList number={number} />
         </Fragment>
     )
 }
