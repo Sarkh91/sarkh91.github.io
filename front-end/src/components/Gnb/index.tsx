@@ -7,6 +7,7 @@ const Gnb = () => (
             <li><Link to="/counter_fn">Counter (함수형)</Link></li>
             <li><Link to="/counter_class">Counter (클래스형)</Link></li>
             <li><Link to="/input">Input</Link></li>
+            <li><Link to="/ajax">AJAX</Link></li>
         </ul>
     </nav>
 )

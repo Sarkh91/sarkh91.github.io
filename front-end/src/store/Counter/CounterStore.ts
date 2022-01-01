@@ -8,10 +8,12 @@ const initialState:CounterState = {
     number : 1
 }
 
+// 액션 타입
 const INCREASE = 'counter/INCREASE' as const
 const DECREASE = 'counterDECREASE' as const
 const INCREASE_BY = 'counter/INCREASE_BY' as const
 
+// 액션
 export const increase = () => ({type: INCREASE})
 export const decrease = () => ({type: DECREASE})
 export const increaseBy = (diff:number) => ({
