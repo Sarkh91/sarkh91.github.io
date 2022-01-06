@@ -1,5 +1,13 @@
-import axios from './CommonAxios'
+import axios, {AxiosRequestConfig, AxiosResponse} from "axios";
 
-export const ajaxFn = async function (config:object):Promise<any> {
-    return axios(config)
+export interface AjaxConfig extends AxiosRequestConfig {
+
 }
+
+
+export interface AjaxResponse extends AxiosResponse {
+
+}
+
+const axiosInstance = axios.create()
+export default axiosInstance

@@ -1,0 +1,9 @@
+.container{
+  position: relative;
+
+  .MuiBackdrop-root {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .2)
+  }
+}
+
