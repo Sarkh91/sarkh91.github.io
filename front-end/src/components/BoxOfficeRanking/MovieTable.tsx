@@ -1,16 +1,10 @@
 import { TableContainer, Table, TableHead, TableBody, TableRow, TableCell, SxProps, Theme, } from "@mui/material";
 import {useRef} from "react";
 import {makeComma} from "@/util/UtilMethods";
-
-interface MovieField {
-    key:string,
-    label:string,
-    sx?:SxProps<Theme>,
-}
-
+import {MuiTableField} from "@/types";
 
 const MovieTable = ({movies}:{movies:any[]}) => {
-    const fields = useRef<MovieField[]>([
+    const fields = useRef<MuiTableField[]>([
         {key:'rank', label: '순위', sx: {textAlign: 'center'}},
         {key:'rankOldAndNew', label: '신규진입여부', sx: {textAlign: 'center'}},
         {key:'movieNm', label: '제목'},

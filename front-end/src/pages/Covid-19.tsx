@@ -7,18 +7,18 @@ const Covid19 = () => {
         url:'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson',
         method:'get',
         params:{
-            serviceKey:'hrqYE%2FkCYVlI2wCyioF0uwlwk%2FzvAV7%2BzHEXIUWMibWZpK75uJj0bNQXz0gVO5TWSYfjrkjG%2BdtIOVo38qXVqw%3D%3D',
+            serviceKey:'hrqYE/kCYVlI2wCyioF0uwlwk/zvAV7+zHEXIUWMibWZpK75uJj0bNQXz0gVO5TWSYfjrkjG+dtIOVo38qXVqw==',
             pageNo:1,
             numOfRows:10,
         },
     })
     const {response, error} = useFetch(config, true)
 
-    // useEffect(() => {
-    //     if (error) {
-    //         console.log(error)
-    //     }
-    // }, [response, error])
+    useEffect(() => {
+        if (response) {
+            console.log(response)
+        }
+    }, [response])
 
     return (
         <Fragment>

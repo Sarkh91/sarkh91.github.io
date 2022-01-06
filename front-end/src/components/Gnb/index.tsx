@@ -9,6 +9,7 @@ const Gnb = () => (
             <li><Link to="/input">Input</Link></li>
             <li><Link to="/boxoffice">박스오피스</Link></li>
             <li><Link to="/covid19">코로나19</Link></li>
+            <li><Link to="/airinfo">대기오염정보</Link></li>
         </ul>
     </nav>
 )
