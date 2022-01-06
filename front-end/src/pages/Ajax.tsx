@@ -14,7 +14,7 @@ const Ajax = () => {
         url: 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json',
         method: 'get',
         params: {
-            key: 'ccea22bea611d77fe7f18bd86f0b4113',
+            key: 'db6af60d09e4ff95bdf3ae33d0e4b3c3',
             targetDt: moment().subtract(1, 'days').format('YYYYMMDD'),
             multiMovieYn: 'N'
         }
