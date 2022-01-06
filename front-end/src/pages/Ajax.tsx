@@ -30,12 +30,9 @@ const Ajax = () => {
 
     const onClickGet = () => {
         let newConfig = Object.assign({}, config)
+        const oldParams = Object.assign({}, newConfig.params)
         newConfig.params = {}
-        newConfig.params = {
-            key: 'ccea22bea611d77fe7f18bd86f0b4113',
-            targetDt: moment().subtract(1, 'days').format('YYYYMMDD'),
-            multiMovieYn: 'N'
-        }
+        newConfig.params = oldParams
 
         setConfig(newConfig)
     }
