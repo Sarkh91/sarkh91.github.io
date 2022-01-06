@@ -11,7 +11,7 @@ const Ajax = () => {
 
     const [movies, setMovies] = useState<Movie[]>([])
     const [config, setConfig] = useState<AjaxConfig>({
-        url: 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json',
+        url: 'https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json',
         method: 'get',
         params: {
             key: 'db6af60d09e4ff95bdf3ae33d0e4b3c3',
