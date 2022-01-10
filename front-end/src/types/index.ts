@@ -31,6 +31,22 @@ export interface AirInfoEntity {
     informOverall:string
 }
 
+export interface CovidResponse extends AjaxResponse{
+    response:{
+        body:{
+            items:{
+                item:CovidEntity
+            }
+        }
+    }
+}
+
+export interface CovidEntity {
+    accExamCnt: number,
+    decideCnt: number,
+    deathCnt: number
+}
+
 export interface MuiTableField {
     key:string,
     label:string,
